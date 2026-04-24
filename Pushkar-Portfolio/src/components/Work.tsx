@@ -9,33 +9,38 @@ const projects = [
     category: "Full-Stack Alumni Networking Platform",
     tools:
       "React.js, Node.js/Express, MongoDB, Authentication, Role-based Access, REST APIs",
-    image: "/images/next1.webp",
+    image: "/images/Alumni.png",
+    github: "https://github.com/pushkarwaykole02/Alumni-Connect",
   },
   {
     title: "Property Khareedo",
     category: "Real Estate Management Platform",
     tools:
       "React.js, Node.js/Express, MongoDB/SQL, Property Listings, Filters, Performance Optimization",
-    image: "/images/next2.webp",
+    image: "/images/property_khareedo.png",
+    github: "https://github.com/pushkarwaykole02/Property-Khareedo",
   },
   {
     title: "Mind Scale",
     category: "Data Visualization Web Application",
     tools:
       "React.js, Chart Libraries (Bar, Line, Doughnut), Dashboard, Real-time Insights",
-    image: "/images/react2.webp",
+    image: "/images/MindScale.png",
+    github: "https://github.com/pushkarwaykole02/Mind-Scale",
   },
   {
     title: "Portfolio Website",
     category: "Personal Portfolio & Branding",
     tools: "React.js, TypeScript, Three.js, Vite, Custom Animations",
-    image: "/images/nextBL.webp",
+    image: "/images/portfolio_screenshot.png",
+    github: "https://github.com/pushkarwaykole02/Pushkar-Portfolio",
   },
   {
     title: "Practice Projects & Mini Apps",
     category: "Learning & Experiments",
     tools: "JavaScript, APIs, UI Components, Layouts, Responsive Design",
-    image: "/images/javascript.webp",
+    image: "/images/practice_projects.png",
+    github: "https://github.com/pushkarwaykole02",
   },
 ];
 
@@ -107,7 +112,11 @@ const Work = () => {
                         <h3>0{index + 1}</h3>
                       </div>
                       <div className="carousel-details">
-                        <h4>{project.title}</h4>
+                        <h4>
+                          <a href={project.github} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}>
+                            {project.title}
+                          </a>
+                        </h4>
                         <p className="carousel-category">
                           {project.category}
                         </p>

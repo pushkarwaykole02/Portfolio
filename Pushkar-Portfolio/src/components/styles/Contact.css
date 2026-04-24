@@ -59,6 +59,8 @@ a.contact-social {
   opacity: 0.5;
 }
 
+
+
 @media only screen and (max-width: 1600px) {
   .contact-section h3 {
     font-size: 50px;
